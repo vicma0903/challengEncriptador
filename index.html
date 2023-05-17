@@ -1,46 +1,54 @@
 <!DOCTYPE html>
-
-<html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Encriptador de texto</title>
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Sigmar&display=swap" rel="stylesheet">
+<html lang="en">
+  <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="styles.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Sigmar&display=swap" rel="stylesheet">
+     <title>Encriptador</title>
+     
 
     </head>
 
     <body>
-        <div class="cajatexto">
-            <div class="encriptartexto">
-                <textarea name="mensaje" class="mensjae" cols="40" rows="20" placeholder="Ingrese texto aquí"></textarea>
-            </div>
+        <header>
+            <img  class="logo" src="Logo.png" alt="Logo Alura">
+        </header>
 
-            <div class="condiciones">
-                <p>Solo letras minúsculas y sin acentos</p>
-            </div>
-
-            <div class="botones">
-                <button class="boton-encriptar" type="button" onclick="encriptar()">
-                  Encriptar
-                </button>
-                <button class="boton-desencriptar" type="button" onclick="desencriptar()"> Desencriptar
-                </button>
+        <main>
+            <seccion>
+                <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese texto aquí"></textarea>
+                <div class="información">
+                    <p><h6>Solo letras minúsculas y sin acentos</h6></p>
+                </div>
+                <div class="botones">
+                    <button class="btn-encriptar" type="button" onclick="encriptar()">
+                      Encriptar
+                    </button>
+                    <button class="btn-desencriptar" type="button" onclick="desencriptar()"> Desencriptar
+                    </button>
+                    
+                </div>
                 
-            </div>
-            
-            <div class="caja-encriptado">
-                <iframe class="animacion" src="https://giphy.com/embed/PkD8o1I8w55aE" width="480" height="378" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/ascii-en-imgenes-PkD8o1I8w55aE"></a></p> 
+            </seccion>
+
+            <seccion>
+                <textarea class="mensaje" cols="20" rows="10"></textarea>
                 <div class="texto-encriptado" id="texto-encriptado">
                 <h2 id="mensaje-encriptado">Ningun mensaje fue encontrado</h2>
                 <p id="parrafo">ingrese el texto que desees encriptar o desencriptar</p>
-                <button class="boton-copiar" type="button" onclick="copiartexto()">Copiar</button>
-            </div>
+                
+                <button class="btn-copiar" type="button" onclick="copiartexto()">Copiar</button>
 
-        </div>
+
+            </seccion>
+
+
+        </main>
+
 
 
 
