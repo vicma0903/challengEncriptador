@@ -2,7 +2,6 @@
     background: #f3f5fc;    
     font-family: 'Inter';
     font-weight: 400;
-    font-size: 32px;
     line-height: 150%;
 
 }
@@ -10,7 +9,7 @@
 .logo {
     padding-top: 10px;
     margin-left: 10xp;
-    width: 10%;
+    width: 8%;
 }
 
 
@@ -23,18 +22,21 @@ main {
 .text-area{
     border: none;
     color: #0a3871;
-    margin-top: 90px;
+    margin-top: 15px;
     text-transform: lowercase;
+    font-size: 30px;
 }
 
 ::placeholder{ color: #0a3871;}
   .text-area:focus{
     outline: none;
+    font-size: 30px;
+    
 }
 
 .mensaje{
     background: white;
-    background-image: url("/Users/Razie/OneDrive/Escritorio/Encriptador/encriptar-cifrar.png");
+    background-image: url("/Users/Razie/OneDrive/Escritorio/Encriptador/Muñeco.png");
     background-repeat: no-repeat;
     border: none;
     border-radius: 24px;
@@ -42,16 +44,18 @@ main {
     margin-left: 98px;
     margin-top: 20px;
     padding-left: 20px;
-    position: ;
+    font-size: 30px;
 }
 
 .mensaje:focus {
     outline: none;
+    
 }
 
 .botones{
     display: flex;
     margin-top: 18px;
+    
 
 }
 
@@ -63,6 +67,7 @@ main {
     cursor: pointer;
     height: 67px;
     width: 328px;
+    font-size: 30px;
 
 }
 
@@ -75,6 +80,7 @@ main {
     height: 67px;
     margin-left: 30px;
     width: 328px;
+    font-size: 30px;
 
 }
 
@@ -85,8 +91,37 @@ main {
     cursor: pointer;
     height: 67px;
     margin-left: 108px;
-    margin-top: 80px;
+    margin-top: 50px;
     position: absolute;
     width: 336px;
+    font-size: 30px;
+
+}
+
+.informacion {
+    padding-top: 60px;
+    font-size: 22px;
+    color: #495057;
+    
+}
+
+.mensaje-encriptado {
+    
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 80px;
+    font-weight: bold;
+    
+}
+
+.parrafo {
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-left: 90px;
+    color: #0a3871;
 
 }

@@ -20,15 +20,17 @@
 
         <main>
             <seccion>
-                <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese texto aquí"></textarea>
-                <div class="información">
-                    <p><h6>Solo letras minúsculas y sin acentos</h6></p>
+                <textarea class="text-area" cols="40" rows="10" placeholder="Ingrese texto aquí"></textarea>
+
+                <div class="informacion">
+                    <p><h6>Solo letras minúsculas y sin acento</h6></p>
                 </div>
+
                 <div class="botones">
-                    <button class="btn-encriptar" type="button" onclick="encriptar()">
+                    <button class="btn-encriptar" type="button" onclick="btnEncriptar()">
                       Encriptar
                     </button>
-                    <button class="btn-desencriptar" type="button" onclick="desencriptar()"> Desencriptar
+                    <button class="btn-desencriptar" type="button" onclick="btnDesencriptar()"> Desencriptar
                     </button>
                     
                 </div>
@@ -38,8 +40,8 @@
             <seccion>
                 <textarea class="mensaje" cols="20" rows="10"></textarea>
                 <div class="texto-encriptado" id="texto-encriptado">
-                <h2 id="mensaje-encriptado">Ningun mensaje fue encontrado</h2>
-                <p id="parrafo">ingrese el texto que desees encriptar o desencriptar</p>
+                <h2 class="mensaje-encriptado">Ningun mensaje fue encontrado</h2>
+                <p class="parrafo">ingrese el texto que deseas encriptar o desencriptar</p>
                 
                 <button class="btn-copiar" type="button" onclick="copiartexto()">Copiar</button>
 
@@ -48,6 +50,8 @@
 
 
         </main>
+
+        <script src="/Users/Razie/OneDrive/Escritorio/Encriptador/script.js"></script>
 
 
 
