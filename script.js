@@ -27,7 +27,6 @@ function encriptar (stringEncriptada){
     }
 
     return stringEncriptada
-
     
 }
 
@@ -53,4 +52,10 @@ function desencriptar (stringDesencriptada){
 
     return stringDesencriptada
 
+}
+
+function copiar (){
+    var contenido = document.querySelector(textoEncriptado);
+    contenido.selected();
+    document.execCommand("copy");
 }
